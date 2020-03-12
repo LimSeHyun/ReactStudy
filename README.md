@@ -14,8 +14,9 @@ class 클래스 명(파일이름과 동일) extends React.Component(리액트에
   }
 }
 
-export default 파일명;   
-└ 해당 파일명으로 내보낸다.
+export default 객체명;   
+└ 해당 객체명으로 내보낸다.
+
 ```
 ---------------------------------------------------
 ```
@@ -29,6 +30,11 @@ class App extends React.Component {
       state
       기본 html은 값이 수정되었을때 전체 로딩이 필요하지만
       state는 값이 바뀐 부분만 재로딩을 한다.(부분로딩)
+      └ 부분로딩시 필요한 요소
+        shouldComponentUpdate(nextProps, nextState)
+        ex ) return this.state !== nextState
+        false 반환 시 업데이트 x
+        true 반환 시 업데이트 o
       
       ----------------------------------------------------
       
