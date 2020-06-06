@@ -120,3 +120,13 @@ component : 재사용이 가능한 조각으로 UI를 나눈 것
   컴포넌트가 업데이트 하고 나서 실행!
 
 '''
+
+'''
+	shouldComponentUpdate(nextProps, nextState){		
+		return true;
+	}
+    
+  return 값이 false 일 경우 shouldComponentUpdate 사용중인 Component 는 업데이트 X!
+  프로그램 최적화 할 때 유용함!
+
+'''

@@ -23,7 +23,13 @@ export default class Counter extends Component {
 	}
 	
 	componentDidUpdate(){
-		console.log(this.state.num)
+		console.log("업데이트햇다")
+	}
+
+	shouldComponentUpdate(nextProps, nextState){
+		console.log("should i update?")
+		
+		return this.props.name !== nextProps.name;
 	}
     
     render() {
