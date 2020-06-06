@@ -108,3 +108,15 @@ class App extends React.Component {
 
 component : 재사용이 가능한 조각으로 UI를 나눈 것   
 └ ex) 키보드를 이루고있는 키캡
+
+
+
+'''
+	componentDidUpdate(){
+		console.log(this.state.num)
+	}
+
+  componentDidUpdate
+  컴포넌트가 업데이트 하고 나서 실행!
+
+'''

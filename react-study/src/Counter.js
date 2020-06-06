@@ -20,7 +20,11 @@ export default class Counter extends Component {
 		this.setState({
 			num : this.state.num - 1,
 		})
-    }
+	}
+	
+	componentDidUpdate(){
+		console.log(this.state.num)
+	}
     
     render() {
         return (
