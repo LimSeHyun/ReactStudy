@@ -34,7 +34,7 @@ class App extends React.Component {
         shouldComponentUpdate(nextProps, nextState)
         ex ) return this.state !== nextState
         false 반환 시 업데이트 x
-        true 반환 시 업데이트 o
+        true 반환 시 업데이트 o => render 실행
 
       props
       부모 컴포넌트가 자식 컴포넌트에게 값을 전달
@@ -111,7 +111,7 @@ component : 재사용이 가능한 조각으로 UI를 나눈 것
 
 
 
-'''
+```
 	componentDidUpdate(){
 		console.log(this.state.num)
 	}
@@ -119,9 +119,9 @@ component : 재사용이 가능한 조각으로 UI를 나눈 것
   componentDidUpdate
   컴포넌트가 업데이트 하고 나서 실행!
 
-'''
+```
 
-'''
+```
 	shouldComponentUpdate(nextProps, nextState){		
 		return true;
 	}
@@ -129,4 +129,16 @@ component : 재사용이 가능한 조각으로 UI를 나눈 것
   return 값이 false 일 경우 shouldComponentUpdate 사용중인 Component 는 업데이트 X!
   프로그램 최적화 할 때 유용함!
 
-'''
+```
+
+```
+const memberList = this.state.member.map((data)=>{
+  return <Array memberList = {data}></Array>
+})
+
+.map : 배열의 내장 함수
+for문처럼 반복은 하되 가지고있는 값을 하나씩 불러온다
+값은 첫번째 매개변수에 담기고
+두번째 매개변수에는 index가 온다.
+
+```
