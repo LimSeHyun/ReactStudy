@@ -35,6 +35,10 @@ class App extends React.Component {
         ex ) return this.state !== nextState
         false 반환 시 업데이트 x
         true 반환 시 업데이트 o
+
+      props
+      부모 컴포넌트가 자식 컴포넌트에게 값을 전달
+      자식 컴포넌트는 값을 수정할 수 없다!
       
       ----------------------------------------------------
       
